@@ -1,0 +1,12 @@
+package com.pablomonteserin;
+
+public class PruebaStatic {
+	public static void main(String[] args) {
+		PruebaStatic p = new PruebaStatic();
+		p.saludar();
+	}
+
+	public static void saludar() {
+		System.out.println("el amor mola");
+	}
+}

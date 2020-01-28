@@ -1,0 +1,13 @@
+package com.pablomonteserin;
+
+public class Persona {
+
+	
+	public static void main(String [] nombre) {
+		String[] personas= {"Carlos", "Carla", "Juan", "Marta"};
+		 for (int i = 0; i <= personas.length; i++) {
+			 System.out.println("Conozco a alguien llamado" + personas[i]);
+		 }
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.pablomonteserin;
+
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Main main = new Main();
+		int r = main.calcularMetros(5);
+		System.out.println(r);
+	}
+
+	public int calcularMetros (int km){
+		int metros = km*1000;
+		return metros;	
+	}
+		
+}

@@ -1,0 +1,16 @@
+package com.pablomonteserin;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		Main main2 = new Main();
+		main2.mainarea(3, 5);
+	}
+	public void mainarea(float base, float altura) {
+		float areaTriangulo= (base*altura/2);
+		System.out.println(areaTriangulo);
+	}
+	
+   
+}

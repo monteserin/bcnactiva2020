@@ -1,0 +1,21 @@
+package com.pablomonteserin;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+    	Main main=new Main ();
+    	main.calcularperimetro(4,3);
+	}
+    public void calcularperimetro (int an,int alt){
+    	int perimetro;
+    	perimetro=an*2+alt*2;
+    	System.out.println("el perimetro del rectángulo"+perimetro);
+    	/*
+    	 * Para llamar a un método necesitamos
+    	 * una instancia de la clase a la que 
+    	 * pertence dicho método
+    	 *                       Pablo Monteserín
+    	 * */
+    }
+}

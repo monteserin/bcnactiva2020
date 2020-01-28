@@ -1,0 +1,39 @@
+package com.pablomonteserin;
+
+
+import java.util.Scanner;
+
+
+public class Main {
+	
+	public int suma(int a, int b) {
+		int s = a + b;
+		
+	}
+	
+	
+
+	public static void main(String[] args) {
+		Main main = new Main();
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Introducir primer numero: ");
+	    int numero1 = scanner.nextInt();
+	    
+		System.out.println("Introducir segundo numero: ");
+		int numero2 = scanner.nextInt();
+		
+		System.out.println("Pon la operacion a realizar (suma, resta, multiplicacion, division)");
+		String operacion = scanner.nextLine();
+		
+		if (operacion.equals("suma")) {
+			
+		}else if (operacion.equals("resta")) {
+			
+		}else if (operacion.equals("multiplicacion")) {
+		
+		}else if (operacion.equals("division")) {
+	}
+
+	
+		
+}

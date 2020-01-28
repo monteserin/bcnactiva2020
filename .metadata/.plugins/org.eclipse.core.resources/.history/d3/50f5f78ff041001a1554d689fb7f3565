@@ -1,0 +1,15 @@
+package ejerciciosoperadores;
+
+public class Ejercicio1 {
+
+	public static void main(String[] args) {
+		String [] palabras = {"amor","odio","indiferencia","amable"};
+		
+		
+		double n = Math.floor(Math.random() * palabras.length);
+		
+		String palabrasecreta = palabras [(int) n];
+		
+		System.out.println(palabrasecreta);
+	}
+}

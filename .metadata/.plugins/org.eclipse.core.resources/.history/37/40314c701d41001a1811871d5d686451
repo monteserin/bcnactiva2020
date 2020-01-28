@@ -1,0 +1,12 @@
+package com.pablomonteserin;
+
+public class Persona {
+	String cosa;
+
+	
+	public void saludarAAlguien(String nombre) {
+		cosa.length();
+
+	}
+
+}

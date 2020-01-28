@@ -1,0 +1,52 @@
+package com.pablomonteserin;
+
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Main main = new Main();
+	
+	
+		
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Introduzca el primer operando, por favor:");
+		float n1 = scanner.nextFloat();
+		
+		System.out.println("Introduzca el segundo operando, por favor:");
+		float n2 = scanner.nextFloat();
+		
+		System.out.println("Introduzca el operador, por favor:");
+		String op = scanner.next();
+		
+				
+		if (op.equals("+")) {
+			main.sumar(n1, n2);
+		} else if (op.equals("-")) {
+			main.restar(n1, n2);
+		} else if (op.equals("*")) {
+			main.dividir(n1, n2);
+		} else if (op.equals("/")) {
+			main.multiplicar(n1, n2);
+		}
+	}
+	
+	public void sumar (float a , float b) {
+		float resultado = a + b;
+		System.out.println(resultado);
+	}
+	public void restar (float a , float b) {
+		float resultado = a - b;
+		System.out.println(resultado);
+	}
+	public void multiplicar (float a , float b) {
+		float resultado = a * b;
+		System.out.println(resultado);
+	}
+	public void dividir (float a , float b) {
+		float resultado = a / b;
+		System.out.println(resultado);
+	}
+		
+}

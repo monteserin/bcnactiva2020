@@ -1,0 +1,21 @@
+package com.pablomonteserin;
+
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Main main = new Main();
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Introducir primer numero: ");
+	    int numero1 = scanner.nextInt();
+	    
+		System.out.println("Introducir segundo numero: ");
+		int numero2 = scanner.nextInt();
+		
+		
+	}
+
+	
+		
+}

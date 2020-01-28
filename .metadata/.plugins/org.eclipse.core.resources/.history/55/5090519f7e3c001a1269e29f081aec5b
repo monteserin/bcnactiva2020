@@ -1,0 +1,21 @@
+package com.pablomonteserin;
+
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Introduce un numero");
+		int numero = scanner.nextInt();
+		
+		Main calcularCubo = new Main();
+		calcularCubo.calcularCubo(numero);
+	}
+
+	public void calcularCubo(int n) {
+		int r = n * n * n;
+		System.out.println(r);
+	}
+		
+}
