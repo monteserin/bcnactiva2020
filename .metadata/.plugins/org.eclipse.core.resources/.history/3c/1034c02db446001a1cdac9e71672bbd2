@@ -1,0 +1,12 @@
+package tusiquemesobrecargas;
+
+public class Hijo extends Papa {
+	public static void sobreEscritura(String txtBienvenida, String nombre) {
+		System.out.println(txtBienvenida + "......" + nombre);
+	}
+
+	protected static void sobreCarga(int codigoDespedida) {
+		System.out.println(codigoDespedida);
+		
+	}
+}

@@ -1,0 +1,5 @@
+package demodelainterfaz;
+
+public class ITraductorImplementation implements ITraductor {
+
+}

@@ -1,0 +1,18 @@
+package demodelainterfaz;
+
+public class Main {
+
+	public static void main(String[] args) {
+		TraduceloBien tr= new TraduceloBien();
+		
+		String valor = tr.trduceloGuay("hola");
+		System.out.println(valor);
+		
+		
+		
+		
+		
+		
+	}
+
+}

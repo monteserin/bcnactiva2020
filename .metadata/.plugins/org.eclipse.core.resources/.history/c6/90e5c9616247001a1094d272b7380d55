@@ -1,0 +1,15 @@
+package demodelainterfaz;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Traductor2000 tr= new Traductor2000();
+		
+		String valor = tr.traducelo("hola");
+		System.out.println(valor);
+		
+		
+		
+	}
+
+}

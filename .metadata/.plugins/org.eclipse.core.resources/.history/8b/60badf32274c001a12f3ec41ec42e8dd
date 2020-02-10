@@ -1,0 +1,26 @@
+package deposito;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Deposito d1 = new Deposito();
+		d1.setAlto(1);
+		d1.setAncho(2);
+		d1.setLargo(3);
+		
+		Deposito d2 = new Deposito();
+		d2.setAlto(3);
+		d2.setAncho(2);
+		d2.setLargo(2);
+		
+		if(d1.equals(d2)) {
+			System.out.println("El amor nos hace fuertes");
+		}else {
+			System.out.println("nop");
+		}
+		
+		
+	}
+
+}

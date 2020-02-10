@@ -1,0 +1,18 @@
+package demodelainterfaz;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ITraductorImplementation tr= new ITraductorImplementation();
+		
+		String valor = tr.monteserinTranslate("hola");
+		System.out.println(valor);
+		
+		
+		
+		
+		
+		
+	}
+
+}

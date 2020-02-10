@@ -23,6 +23,7 @@ public class Ahorcado {
 				
 			if(intentos>9) {
 				System.out.println("pudrete en las llamas del infierno");
+				terminado = true;
 			}else {
 				System.out.println("Introduce una letra");
 				String letra = lector.next();

@@ -1,0 +1,5 @@
+package encapsulamiento;
+
+public class Persona {
+	private int edad = 37;
+}
