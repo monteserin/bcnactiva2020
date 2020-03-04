@@ -1,0 +1,26 @@
+package hibernatesiniestro;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+public class MainInserccion {
+
+	public static void main(String[] args) {
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		Transaction transaction = session.beginTransaction();
+		Vehiculo vehiculo = new Vehiculo();
+		List<Siniestro> libros = new ArrayList<Siniestro>();
+		libros.add(new Libro(autor, "titulo1"));
+		libros.add(new Libro(autor, "titulo2"));
+		autor.setNombre("Juan");
+		autor.setLibros(libros);
+		session.save(autor);
+		transaction.commit();
+		session.close();
+
+	}
+
+}

@@ -1,0 +1,4 @@
+127.0.0.1 - - [24/Feb/2020:16:25:15 +0100] "GET / HTTP/1.1" 404 637
+0:0:0:0:0:0:0:1 - - [24/Feb/2020:16:25:16 +0100] "GET /peticiones/peticiones.jsp HTTP/1.1" 200 248
+0:0:0:0:0:0:0:1 - - [24/Feb/2020:16:25:16 +0100] "GET /favicon.ico HTTP/1.1" 404 648
+0:0:0:0:0:0:0:1 - - [24/Feb/2020:16:25:22 +0100] "GET /peticiones/Controller?nombre=Alberto HTTP/1.1" 200 269

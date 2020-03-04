@@ -1,0 +1,49 @@
+package hibernatesiniestro;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+public class MainInserccion {
+
+
+	public static void main(String[] args) {
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		Transaction transaction = session.beginTransaction();
+		Vehiculo vehiculo = new Vehiculo();
+		List<Siniestro> siniestros = new ArrayList<Siniestro>();
+
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+		Date miFecha = null;
+		try {
+			miFecha = sdf.parse("10-10-2015");
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		siniestros.add(new Siniestro(miFecha, 1000, vehiculo));
+		siniestros.add(new Siniestro(miFecha, 500, vehiculo));
+		
+	
+		vehiculo.setMarca("Volvo");
+		vehiculo.setAsientos(4);
+		vehiculo.setRuedas(4);
+		vehiculo.setMatricula("matricula");
+		vehiculo.setSiniestros(siniestros);
+		
+		
+		session.save(vehiculo);
+		transaction.commit();
+		session.close();
+
+	}
+
+}

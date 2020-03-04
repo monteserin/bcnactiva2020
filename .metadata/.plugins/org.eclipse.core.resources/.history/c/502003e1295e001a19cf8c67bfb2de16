@@ -1,0 +1,34 @@
+package hibernatesiniestro;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+public class MainInserccion {
+
+
+	public static void main(String[] args) {
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		Transaction transaction = session.beginTransaction();
+		Vehiculo vehiculo = new Vehiculo();
+		List<Siniestro> siniestros = new ArrayList<Siniestro>();
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+		Date miFecha = sdf.parse("10-10-2015");
+		
+		
+		siniestros.add(new Siniestro());
+		siniestros.add(new Siniestro(autor, "titulo2"));
+		autor.setNombre("Juan");
+		autor.setLibros(libros);
+		session.save(autor);
+		transaction.commit();
+		session.close();
+
+	}
+
+}

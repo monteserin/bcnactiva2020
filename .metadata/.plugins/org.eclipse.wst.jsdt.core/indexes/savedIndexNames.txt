@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+C:\Users\formacio\Desktop\amor-workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2026342864.index
+2868883739.index
+627245043.index
+792245023.index
+2755295930.index
+126202442.index
+1621919972.index
+2724814982.index

@@ -1,0 +1,8 @@
+package hibernatesiniestro;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Siniestro {
+	private int id;
+}
